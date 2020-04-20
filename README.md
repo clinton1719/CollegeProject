@@ -1,12 +1,14 @@
 # CollegeProject
 A project on ethereum based online voting application
 
-Project Guide: Shri Chitharanjan k
-               Professor
-               Department of CS
-               Sree Chitra Thirunal College of Engineering, Pappanamcode
+#**Project Guide: 
+Shri Chitharanjan k
+Professor
+Department of CS
+Sree Chitra Thirunal College of Engineering, Pappanamcode**
+               
 
-#  Ethereum voting dapp
+##  Ethereum voting dapp
 
 ### Dependencies:
 - [Nodejs 5.0+](https://nodejs.org/en/)
