@@ -2,7 +2,7 @@
 A project on ethereum based online voting application
 
 #  Project Guide
- Shri Chitharanjan k  
+ Shri Chitharanjan K  
  Professor
  Department of CS  
  Sree Chitra Thirunal College of Engineering, Pappanamcode
