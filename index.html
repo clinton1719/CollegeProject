@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>SCT Voting</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+     <style>
+body {background-image: url('bg.jpg');background-repeat: no-repeat;background-size: 100%}
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #f1f1f1;
+  color: black;
+  font-size: 80px;
+}
+</style>
+  </head>
+ 
+<div class="header">
+  <center><img src="sctlogo.png" style="width:120px;height:80px;"> SCT Voting</center>
+</div> 
+<body>
+ <br><br><br>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3">  
+    </div>
+    <div class="col-lg-2"> <div class="card"><center><img src="vote.jpg" style="width:250px;height:250px;"></center><br><h2><center>Allow voting</center></h2></div>
+    </div>
+    <div class="col-lg-2"> 
+    </div>
+    <div class="col-lg-2"> <div class="card"><center><img src="result.jpg" style="width:250px;height:250px;"></center><br><h2><center>End voting</center></h2></div>
+    </div>
+    <div class="col-lg-3"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3">  
+    </div>
+    <div class="col-lg-2"> <center><a onclick="passWord()" class="btn btn-primary"> Click Here </a></center>
+    </div>
+    <div class="col-lg-2"> 
+    </div>
+    <div class="col-lg-2"> <center><a onclick="result()" class="btn btn-primary"> Click Here </a></center>
+    </div>
+    <div class="col-lg-3"> 
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+<script>
+function poll() {
+   window.location.replace("poll.html");
+}
+</script>
+<script>
+function result() {
+   window.location.replace("resultconfirm.html");
+}
+</script>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "password") {
+alert('You Got it Right!');
+window.location.replace("poll.html");
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+
+
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./app.js"></script>
+</html>

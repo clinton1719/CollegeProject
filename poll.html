@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <title>Vote Here</title>
+    <style>
+body {background-image: url('bg.jpg');background-repeat: no-repeat;background-size: 100%}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #f1f1f1;
+  color: black;
+  font-size: 60px;
+}
+</style>
+  </head>
+  <body>
+ 
+<div class="header">
+  <center>Vote Here</center>
+</div> 
+
+      <br><br>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">  
+    	<div class="container" width="400px">
+        <div class="card"> 
+            <table class="table">
+           
+            <tr>
+                 <td>   <h3>Candidate List</h3>
+                 <td>   </td>
+            </tr>              
+            <tr>
+                 <td>    <img src="img.webp" width="70" height="70"> </td>
+                 <td>    <label for="candidatesSelect">Candidate 1</label></td>
+            </tr>
+            <tr>
+                 <td> <img src="img.webp" width="70" height="70"></td>
+                 <td>   <label for="candidatesSelect">Candidate 2</label></td>
+            </tr>
+
+            </table>
+     </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6"> 
+
+
+<div class="form-group">
+      <br><br>
+
+      <div class="card">
+          <div class="card-header"><h3>Add ID and click candidate to vote</h3></div>
+<div class="card-body">
+         		 <div class="input-group mb-3">
+          				  <input type="text" class="form-control" id="id-input" placeholder="Enter ID">
+          		 </div>
+          		 <div id="candidate-box"></div>
+         			 <button class="btn btn-primary" onclick="displayRadioValue()">Vote</button>
+         			 <font color="white"><div id="msg"></div></font>
+        		 </div>
+
+        		 <a id="myP" style="visibility: hidden;" onmousedown="App.vote()" onmouseup="mouseUp();" class="btn btn-danger">Confirm</a>
+       </div>
+              <hr />
+            
+           <font color="white"> <p id="accountAddress" class="text-center"></font></p>
+          </div>
+ </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+    
+     <d
+ </div>
+   <!-- 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  Include all compiled plugins (below), or include individual files as needed
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script> -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+        <script> 
+        function displayRadioValue() { 
+    document.getElementById("myP").style.visibility = "visible";
+            document.getElementById("result").innerHTML = ""; 
+            var ele = document.getElementsByTagName('input'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                  
+                if(ele[i].type="radio") { 
+                  
+                    if(ele[i].checked) 
+                        document.getElementById("result").innerHTML 
+                                += " Selected Candidate : " 
+                                + ele[i].value + "<br>"; 
+                } 
+            } 
+        } 
+    </script>
+<script>
+function mouseUp() {
+   window.location.replace("index.html");
+}
+</script>
+    <!-- Custom Scripts -->
+    <script src="app.js"></script>
+</script>
+
+  </body>
+</html>
