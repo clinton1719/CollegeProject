@@ -2,10 +2,10 @@
 A project on ethereum based online voting application
 
 #  Project Guide
- Shri Chitharanjan k
- Professor
- Department of CS
- Sree Chitra Thirunal College of Engineering, Pappanamcode
+ Shri Chitharanjan k__
+ Professor__
+ Department of CS__
+ Sree Chitra Thirunal College of Engineering, Pappanamcode__
                
 
 ##  Ethereum voting dapp
