@@ -3,8 +3,8 @@ A decentralized voting application built on the Ethereum blockchain
 
 # Project Guide
   Shri Chitharanjan K  
-  Professor
-  Department of computer science
+  Professor  
+  Department of computer science  
   Sree Chitra College of Engineering, Pappanamcode
 
 ### Dependencies:
