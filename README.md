@@ -1,6 +1,12 @@
 # Ethereum Voting DApp
 A decentralized voting application built on the Ethereum blockchain
-A boilerplate for building Dapps with webpack - https://github.com/tko22/truffle-webpack-boilerplate
+
+# Project Guide
+  Shri Chitharanjan K  
+  Professor
+  Department of computer science
+  Sree Chitra College of Engineering, Pappanamcode
+
 ### Dependencies:
 - [Nodejs 5.0+](https://nodejs.org/en/)
 - [Truffle](https://github.com/trufflesuite/truffle)
